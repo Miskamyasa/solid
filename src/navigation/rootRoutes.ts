@@ -21,6 +21,16 @@ export const rootRoutes: RouteData[] = [
     component: Home,
   },
   {
+    title: "Blog",
+    path: "/blog",
+    component: lazy(() => import("../pages/Blog")),
+  },
+  {
+    title: "Service",
+    path: "/service",
+    component: lazy(() => import("../services/Service")),
+  },
+  {
     title: "About",
     path: "/about",
     component: lazy(() => import("../pages/About")),
