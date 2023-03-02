@@ -1,0 +1,37 @@
+{
+  "name": "solid-project",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "pnpm": ">=6.0.0"
+  },
+  "scripts": {
+    "analyze": "pnpx vite-bundle-visualizer --output reports/analyze.html --template list",
+    "analyze:css": "pnpx windicss-analysis",
+    "dev": "vite",
+    "build": "vite build",
+    "postinstall": "pnpx patch-package && husky install",
+    "prepare": "husky install",
+    "serve": "vite preview",
+    "lint": "eslint --fix --ext .ts,.tsx ./src"
+  },
+  "dependencies": {
+    "@solidjs/router": "0.7.0",
+    "solid-js": "1.6.11"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.53.0",
+    "@typescript-eslint/parser": "5.53.0",
+    "autoprefixer": "10.4.13",
+    "eslint": "8.34.0",
+    "eslint-import-resolver-typescript": "3.5.3",
+    "eslint-plugin-import": "npm:eslint-plugin-i@2.26.0-2",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-solid": "0.10.0",
+    "postcss": "8.4.21",
+    "tailwindcss": "3.2.7",
+    "typescript": "4.9.5",
+    "vite": "4.1.4",
+    "vite-plugin-solid": "2.6.1"
+  }
+}
