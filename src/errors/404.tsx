@@ -1,12 +1,16 @@
-import type {Component} from "solid-js"
+import type {JSXElement} from "solid-js"
+
+import PageLayout from "../layout/PageLayout"
 
 
-const NotFound: Component = () => {
+function NotFound(): JSXElement {
   return (
-    <section class="text-gray-700 p-8">
-      <h1 class="text-2xl font-bold">404: Not Found</h1>
-      <p class="mt-4">It's gone 😞</p>
-    </section>
+    <PageLayout>
+      <section class="text-gray-700 p-8">
+        <h1 class="text-2xl font-bold">404: Not Found</h1>
+        <p class="mt-4">It's gone 😞</p>
+      </section>
+    </PageLayout>
   )
 }
 

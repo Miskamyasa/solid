@@ -1,12 +1,18 @@
 import type {JSXElement} from "solid-js"
 
+import {BiRegularLogInCircle} from "solid-icons/bi"
+
+import Logo from "../../components/Logo/Logo"
+
 import SiteMenu from "./SiteMenu"
 
 
 export default function SiteHeader(): JSXElement {
   return (
-    <div class="h-14 mx-5 mt-3 mb-5 overflow-hidden rounded-md bg-gray-200 shadow-md flex justify-center items-center">
+    <div class="container row overflow-hidden h-14 my-5 rounded-lg bg-zinc-700 shadow-md text-zinc-100">
+      <Logo />
       <SiteMenu />
+      <BiRegularLogInCircle size={24} />
     </div>
   )
 }

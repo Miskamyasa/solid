@@ -6,7 +6,7 @@
     "pnpm": ">=6.0.0"
   },
   "scripts": {
-    "analyze": "pnpx vite-bundle-visualizer --output reports/analyze.html --template list",
+    "analyze": "pnpx vite-bundle-visualizer --output reports/analyze.html --template sunburst --include src",
     "analyze:css": "pnpx windicss-analysis",
     "dev": "vite",
     "build": "vite build",
@@ -17,9 +17,8 @@
   },
   "dependencies": {
     "@solidjs/router": "0.7.0",
-    "solid-js": "1.6.11"
-  },
-  "devDependencies": {
+    "solid-icons": "1.0.4",
+    "solid-js": "1.6.11",
     "@typescript-eslint/eslint-plugin": "5.53.0",
     "@typescript-eslint/parser": "5.53.0",
     "autoprefixer": "10.4.13",

@@ -59,6 +59,7 @@ rules:
     - never
   "@typescript-eslint/space-infix-ops": error
   "@typescript-eslint/type-annotation-spacing": error
+  "@typescript-eslint/restrict-plus-operands": off
   import/newline-after-import:
     - error
     - count: 2

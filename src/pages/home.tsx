@@ -1,33 +1,33 @@
-import {Component, createSignal} from "solid-js"
+import {createSignal, JSXElement} from "solid-js"
+
+import FullLayout from "../layout/FullLayout"
 
 
-const Home: Component = () => {
+export default function Home(): JSXElement {
   const [count, setCount] = createSignal(0)
 
   return (
-    <section class="bg-gray-100 text-gray-700 p-8">
-      <h1 class="text-2xl font-bold">Home</h1>
-      <p class="mt-4">This is the home page.</p>
+    <FullLayout>
+      <section class="bg-gray-100 text-gray-700 p-8">
+        <h1 class="text-2xl font-bold">Home</h1>
+        <p class="mt-4">This is the home page.</p>
 
-      <div class="flex items-center space-x-2">
-        <button
-          class="border rounded-lg px-2 border-gray-900"
-          onClick={(): number => setCount(count() - 1)}
-        >
-          -
-        </button>
+        <div class="flex items-center space-x-2">
+          <button
+            class="border rounded-lg px-2 border-gray-900"
+            onClick={(): number => setCount(count() - 1)}>
+              -
+          </button>
 
-        <output class="p-10px">Count: {count}</output>
+          <output class="p-10px">Count: {count()}</output>
 
-        <button
-          class="border rounded-lg px-2 border-gray-900"
-          onClick={(): number => setCount(count() + 1)}
-        >
-          +
-        </button>
-      </div>
-    </section>
+          <button
+            class="border rounded-lg px-2 border-gray-900"
+            onClick={(): number => setCount(count() + 1)}>
+              +
+          </button>
+        </div>
+      </section>
+    </FullLayout>
   )
 }
-
-export default Home
