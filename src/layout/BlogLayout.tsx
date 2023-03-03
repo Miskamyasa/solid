@@ -1,6 +1,6 @@
 import type {JSXElement, ParentProps} from "solid-js"
 
-import RightSidebar from "./partials/RightSidebar"
+import RightSidebar from "../components/RightSidebar/RightSidebar"
 
 
 export default function ContentLayout(props: ParentProps): JSXElement {

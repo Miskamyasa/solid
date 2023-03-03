@@ -2,8 +2,8 @@ import {Component, lazy} from "solid-js"
 
 import type {RouteDataFunc} from "@solidjs/router"
 
-import Home from "../pages/Home"
-import homeData from "../pages/home.data"
+import Home from "../pages/Home/Home"
+import homeData from "../pages/Home/home.data"
 
 
 type RouteData = {
@@ -22,14 +22,14 @@ export const rootRoutes: RouteData[] = [
     data: homeData,
   },
   {
-    title: "Information",
-    path: "/information",
-    component: lazy(() => import("../pages/Content")),
+    title: "Blog",
+    path: "/blog",
+    component: lazy(() => import("../pages/Blog/Blog")),
   },
   {
     title: "Service",
     path: "/service",
-    component: lazy(() => import("../services/Service")),
+    component: lazy(() => import("../pages/Service/Service")),
   },
   {
     path: "**",

@@ -1,6 +1,6 @@
 import {createSignal, JSXElement} from "solid-js"
 
-import ServiceLayout from "../layout/ServiceLayout"
+import ServiceLayout from "../../layout/ServiceLayout"
 
 
 export default function Service(): JSXElement {
@@ -9,8 +9,7 @@ export default function Service(): JSXElement {
   return (
     <ServiceLayout>
       <main>
-        <h1 class="text-2xl font-bold">Home</h1>
-        <p class="mt-4">This is the home page.</p>
+        <h1 class="text-2xl font-bold">Service</h1>
 
         <div class="flex items-center space-x-2">
           <button
@@ -27,6 +26,7 @@ export default function Service(): JSXElement {
               +
           </button>
         </div>
+
       </main>
     </ServiceLayout>
   )

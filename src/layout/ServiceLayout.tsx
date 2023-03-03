@@ -1,6 +1,6 @@
 import type {JSXElement,ParentProps} from "solid-js"
 
-import LeftSidebar from "./partials/LeftSidebar"
+import LeftSidebar from "../components/LeftSidebar/LeftSidebar"
 
 
 export default function ServiceLayout(props: ParentProps): JSXElement {

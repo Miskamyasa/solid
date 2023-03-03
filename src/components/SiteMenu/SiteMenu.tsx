@@ -19,7 +19,6 @@ function MenuItem(props: { title: string, href: string }): JSXElement {
   )
 }
 
-
 export default function SiteMenu(): JSXElement {
   return (
     <nav class="mx-4 grow">

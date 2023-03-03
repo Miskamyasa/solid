@@ -2,7 +2,7 @@ import {JSXElement, Suspense} from "solid-js"
 
 import {useRouteData} from "@solidjs/router"
 
-import FullLayout from "../layout/FullLayout"
+import FullLayout from "../../layout/FullLayout"
 
 
 export default function Home(): JSXElement {

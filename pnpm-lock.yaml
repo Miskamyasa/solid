@@ -28,6 +28,9 @@ dependencies:
   eslint-plugin-solid:
     specifier: 0.10.0
     version: 0.10.0(eslint@8.34.0)(typescript@4.9.5)
+  pocketbase:
+    specifier: 0.12.0
+    version: 0.12.0
   postcss:
     specifier: 8.4.21
     version: 8.4.21
@@ -2497,6 +2500,10 @@ packages:
   /pify@2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /pocketbase@0.12.0:
+    resolution: {integrity: sha512-q+a9siWZisQu50dex6oZP0Xqxden9DDL1JalopVdkHntGHyBBcbcASPowaA8A0bO5grPjN1wSHnInwP+UuCp9A==}
     dev: false
 
   /postcss-import@14.1.0(postcss@8.4.21):

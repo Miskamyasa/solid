@@ -1,9 +1,9 @@
 import type {JSXElement} from "solid-js"
 
-import ContentLayout from "../layout/BlogLayout"
+import ContentLayout from "../../layout/BlogLayout"
 
 
-export default function Content(): JSXElement {
+export default function Blog(): JSXElement {
   return (
     <ContentLayout>
       <main>
