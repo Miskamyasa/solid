@@ -50,6 +50,11 @@ dependencies:
     specifier: 2.6.1
     version: 2.6.1(solid-js@1.6.11)(vite@4.1.4)
 
+devDependencies:
+  '@total-typescript/ts-reset':
+    specifier: 0.3.7
+    version: 0.3.7
+
 packages:
 
   /@ampproject/remapping@2.2.0:
@@ -682,6 +687,10 @@ packages:
     dependencies:
       solid-js: 1.6.11
     dev: false
+
+  /@total-typescript/ts-reset@0.3.7:
+    resolution: {integrity: sha512-yXt2BRRVCJVvzWaxac5n0nCXzIrQEBE/MeYlNQ8/Iq7UeelNmm/AdnUAu18ilSS893mbEQ4u6whPt/HvOPc4rw==}
+    dev: true
 
   /@types/babel__core@7.20.0:
     resolution: {integrity: sha512-+n8dL/9GWblDO0iU6eZAwEIJVr5DWigtle+Q6HLOrh/pdbXOhOtqzq8VPPE2zvNJzSKY4vH/z3iT3tn0A3ypiQ==}

@@ -1,5 +1,6 @@
 // eslint-disable-next-line import/no-unresolved
 import "./root.css"
+import "@total-typescript/ts-reset"
 import {render} from "solid-js/web"
 
 import App from "./App"
@@ -13,4 +14,4 @@ if (!root || import.meta.env.DEV && !(root instanceof HTMLElement)) {
   )
 }
 
-render(App,root)
+render(App, root)
