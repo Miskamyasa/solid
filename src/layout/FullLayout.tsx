@@ -1,7 +1,7 @@
-import type {JSXElement, ParentProps} from "solid-js"
+import type {ParentProps} from "solid-js"
 
 
-export default function FullLayout(props: ParentProps): JSXElement {
+export default function FullLayout(props: ParentProps) {
   return (
     <div class="container flex-grow">
       {props.children}

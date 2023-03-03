@@ -1,10 +1,10 @@
-import type {ParentProps, JSXElement} from "solid-js"
+import type {ParentProps} from "solid-js"
 
 import SiteHeader from "../components/SiteHeader/SiteHeader"
 import SiteWrapper from "../components/SiteWrapper/SiteWrapper"
 
 
-export default function RootLayout(props: ParentProps): JSXElement {
+export default function RootLayout(props: ParentProps) {
   return (
     <SiteWrapper>
       <SiteHeader />

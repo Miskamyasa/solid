@@ -1,11 +1,11 @@
-import {For, type JSXElement} from "solid-js"
+import {For} from "solid-js"
 
 import {Link} from "@solidjs/router"
 
 import {rootRoutes} from "../../navigation/rootRoutes"
 
 
-function MenuItem(props: { title: string, href: string }): JSXElement {
+function MenuItem(props: { title: string, href: string }) {
   return (
     <li class="px-4">
       <Link
@@ -19,12 +19,12 @@ function MenuItem(props: { title: string, href: string }): JSXElement {
   )
 }
 
-export default function SiteMenu(): JSXElement {
+export default function SiteMenu() {
   return (
     <nav class="mx-4 grow">
       <ul class="flex items-center font-bold">
         <For each={rootRoutes}>
-          {(route): JSXElement => route.title && route.path.length > 2 && (
+          {route => route.title && route.path.length > 2 && (
             <MenuItem
               href={route.path}
               title={route.title} />

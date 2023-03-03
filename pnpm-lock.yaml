@@ -1,9 +1,15 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@solidjs/meta':
+    specifier: 0.28.2
+    version: 0.28.2(solid-js@1.6.11)
   '@solidjs/router':
     specifier: 0.7.0
     version: 0.7.0(solid-js@1.6.11)
+  '@total-typescript/ts-reset':
+    specifier: 0.3.7
+    version: 0.3.7
   '@typescript-eslint/eslint-plugin':
     specifier: 5.53.0
     version: 5.53.0(@typescript-eslint/parser@5.53.0)(eslint@8.34.0)(typescript@4.9.5)
@@ -52,11 +58,6 @@ dependencies:
   vite-plugin-solid:
     specifier: 2.6.1
     version: 2.6.1(solid-js@1.6.11)(vite@4.1.4)
-
-devDependencies:
-  '@total-typescript/ts-reset':
-    specifier: 0.3.7
-    version: 0.3.7
 
 packages:
 
@@ -683,6 +684,14 @@ packages:
       tslib: 2.5.0
     dev: false
 
+  /@solidjs/meta@0.28.2(solid-js@1.6.11):
+    resolution: {integrity: sha512-avlLgBPdk4KVxzRGFlYp/MIJo8B5jVgXPgk6OUnUP8km21Z+ovO+DUd7ZPA7ejv8PBdWi9GE3zCzw8RU2YuV2Q==}
+    peerDependencies:
+      solid-js: '>=1.4.0'
+    dependencies:
+      solid-js: 1.6.11
+    dev: false
+
   /@solidjs/router@0.7.0(solid-js@1.6.11):
     resolution: {integrity: sha512-8HI84twe5FjYRebSLMAhtkL9bRuTDIlxJK56kjfjU9WKGoUCTaWpCnkuj8Hqde1bWZ0X+GOZxKDfNkn1CjtjxA==}
     peerDependencies:
@@ -693,7 +702,7 @@ packages:
 
   /@total-typescript/ts-reset@0.3.7:
     resolution: {integrity: sha512-yXt2BRRVCJVvzWaxac5n0nCXzIrQEBE/MeYlNQ8/Iq7UeelNmm/AdnUAu18ilSS893mbEQ4u6whPt/HvOPc4rw==}
-    dev: true
+    dev: false
 
   /@types/babel__core@7.20.0:
     resolution: {integrity: sha512-+n8dL/9GWblDO0iU6eZAwEIJVr5DWigtle+Q6HLOrh/pdbXOhOtqzq8VPPE2zvNJzSKY4vH/z3iT3tn0A3ypiQ==}

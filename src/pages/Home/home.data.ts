@@ -1,24 +1,13 @@
 import {createResource} from "solid-js"
 
-import type {RouteDataFunc} from "@solidjs/router"
+import {getRecordBySlug} from "../../pocketbase/pocketbase"
 
 
-function wait<T>(ms: number, data: T): Promise<T> {
-  return new Promise((resolve) => setTimeout(resolve, ms, data))
-}
-
-function random(min: number, max: number): number {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
-function fetchName(): Promise<string> {
-  return wait(random(500, 1000), "Solid")
-}
-
-const AboutData: RouteDataFunc = () => {
-  const [data] = createResource(fetchName)
-
+const HomeData = () => {
+  const [data] = createResource(() => {
+    return getRecordBySlug("posts", "/")
+  })
   return data
 }
 
-export default AboutData
+export default HomeData

@@ -34,7 +34,6 @@ plugins:
   - react
 
 rules:
-  "@typescript-eslint/explicit-function-return-type": error
   "@typescript-eslint/indent":
     - error
     - 2
@@ -150,7 +149,7 @@ rules:
     - multiline
   react/jsx-fragments:
     - error
-    - element
+    - syntax
   react/jsx-max-props-per-line:
     - error
     - maximum: 1
