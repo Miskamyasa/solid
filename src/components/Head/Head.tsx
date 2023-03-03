@@ -37,11 +37,11 @@ const head = createRoot(() => {
   return {meta, setTitle, appendTitle, setDescription}
 })
 
-export const updateHeadTags = (data?: {title?: string, description?: string}, append = false) => {
+export const updateHeadTags = (data?: {title?: string, description?: string}, replace = false) => {
   if (data) {
     const {title, description} = data
     if (title) {
-      append ? head.appendTitle(title) : head.setTitle(title)
+      replace ? head.setTitle(title) : head.appendTitle(title)
     }
     if (description) {
       head.setDescription(description)

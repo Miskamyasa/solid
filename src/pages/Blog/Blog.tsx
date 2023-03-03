@@ -6,7 +6,7 @@ import ContentLayout from "../../layout/BlogLayout"
 
 export default function Blog() {
   createEffect(() => {
-    updateHeadTags({title: "Blog"}, true)
+    updateHeadTags({title: "Blog"})
   })
   return (
     <ContentLayout>

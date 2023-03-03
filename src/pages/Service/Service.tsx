@@ -7,7 +7,7 @@ import {updateHeadTags} from "../../components/Head/Head";
 export default function Service() {
   const [count, setCount] = createSignal(0)
   createEffect(() => {
-    updateHeadTags({title: "Service"}, true)
+    updateHeadTags({title: "Service"})
   })
   return (
     <ServiceLayout>

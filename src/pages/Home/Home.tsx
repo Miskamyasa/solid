@@ -14,7 +14,7 @@ export default function Home() {
   createEffect(() => {
     const payload = data()
     if (!data.loading && payload) {
-      updateHeadTags(payload)
+      updateHeadTags(payload, true)
     }
   })
 
