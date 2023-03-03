@@ -1,33 +1,27 @@
-import {createSignal, JSXElement} from "solid-js"
+import {JSXElement, Suspense} from "solid-js"
+
+import {useRouteData} from "@solidjs/router"
 
 import FullLayout from "../layout/FullLayout"
 
 
 export default function Home(): JSXElement {
-  const [count, setCount] = createSignal(0)
+  const name = useRouteData<() => () => string>()
 
   return (
     <FullLayout>
-      <section class="bg-gray-100 text-gray-700 p-8">
-        <h1 class="text-2xl font-bold">Home</h1>
-        <p class="mt-4">This is the home page.</p>
+      <main class=" text-gray-700 p-8 bg-paper">
+        <h1 class="text-2xl font-bold">HomePage</h1>
 
-        <div class="flex items-center space-x-2">
-          <button
-            class="border rounded-lg px-2 border-gray-900"
-            onClick={(): number => setCount(count() - 1)}>
-              -
-          </button>
+        <p class="mt-4">A home of this website.</p>
 
-          <output class="p-10px">Count: {count()}</output>
-
-          <button
-            class="border rounded-lg px-2 border-gray-900"
-            onClick={(): number => setCount(count() + 1)}>
-              +
-          </button>
-        </div>
-      </section>
+        <p class="mt-4">
+          <span>We love</span>
+          <Suspense fallback={<span>...</span>}>
+            <span class="font-bold">&nbsp;{name()}</span>
+          </Suspense>
+        </p>
+      </main>
     </FullLayout>
   )
 }

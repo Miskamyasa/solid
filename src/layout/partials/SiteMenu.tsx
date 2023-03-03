@@ -22,10 +22,10 @@ function MenuItem(props: { title: string, href: string }): JSXElement {
 
 export default function SiteMenu(): JSXElement {
   return (
-    <nav>
-      <ul class="flex items-center font-bold ">
+    <nav class="mx-4 grow">
+      <ul class="flex items-center font-bold">
         <For each={rootRoutes}>
-          {(route): JSXElement => route.title && (
+          {(route): JSXElement => route.title && route.path.length > 2 && (
             <MenuItem
               href={route.path}
               title={route.title} />

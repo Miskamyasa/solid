@@ -1,5 +1,7 @@
 import type {JSXElement} from "solid-js"
 
+import {Link} from "@solidjs/router"
+
 import logoSrc from "./logo.png"
 
 
@@ -9,9 +11,11 @@ interface Props {
 
 export default function Logo(props: Props): JSXElement {
   return (
-    <img
-      alt="Logo"
-      src={logoSrc}
-      width={props.width ?? 100} />
+    <Link href="/">
+      <img
+        alt="Logo"
+        src={logoSrc}
+        width={props.width ?? 100} />
+    </Link>
   )
 }
